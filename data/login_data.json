@@ -1,0 +1,17 @@
+[
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "expected_status": 200
+    },
+    {
+      "email": "",
+      "password": "cityslicka",
+      "expected_status": 400
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "",
+      "expected_status": 400
+    }
+  ]

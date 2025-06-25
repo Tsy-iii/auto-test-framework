@@ -1,0 +1,30 @@
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 虚拟环境
+venv/
+env/
+
+# IDE配置
+.vscode/
+.idea/
+
+# Pytest 的缓存文件
+.pytest_cache/
+.cache/
+*.log
+
+# 环境变量文件（如有）
+.env
+*.env
+
+# 系统文件
+.DS_Store
+
+# Allure 报告
+allure-results/
+allure-report/
+
+# 其他你临时生成、不想上传的目录或文件
