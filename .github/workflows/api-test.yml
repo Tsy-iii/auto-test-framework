@@ -24,6 +24,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run API tests with pytest
+    - name: Run API tests with HTML report
       run: |
-        pytest --maxfail=2 --disable-warnings -v
+        pytest -v --html=report.html --self-contained-html
+
+    - name: Upload HTML report
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-report
+        path: report.html
